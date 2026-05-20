@@ -154,7 +154,7 @@ Complete command references for Hermes and xurl, X API endpoints, and file locat
 
 ## Tags
 
-`hermes` · `xurl` · `x-api` · `twitter-api` · `ai-agent` · `nous-research` · `grok` · `xai` · `automation` · `oauth2` · `terminal` · `cli`
+`hermes` · `xurl` · `x-api` · `agent-api` · `ai-agent` · `nous-research` · `grok` · `xai` · `automation` · `oauth2` · `terminal` · `cli`
 
 ## Live Site
 
