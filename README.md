@@ -2,7 +2,7 @@
 
 > The comprehensive guide to running Hermes AI with xurl for X (Twitter) automation from the terminal.
 
-[![GitHub Pages](https://img.shields.io/badge/Live%20Site-GitHub%20Pages-blue)](https://paypertaylor2.github.io/Agent)
+[![GitHub Pages](https://img.shields.io/badge/Live%20Site-GitHub%20Pages-blue)](https://soon)
 [![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 
 ## What This Is
@@ -47,7 +47,7 @@ hermes
 ## Contract Address
 
 ```
-[CA PLACEHOLDER — Add your contract address here]
+[CA ]
 ```
 
 ## Tags
