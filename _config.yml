@@ -1,0 +1,29 @@
+title: Agent — Hermes + xurl
+description: The comprehensive guide to running Hermes AI with xurl for X automation from the terminal.
+baseurl: "/Agent"
+url: "https://paypertaylor2.github.io"
+
+theme: minima
+plugins:
+  - jekyll-relative-links
+
+relative_links:
+  enabled: true
+  collections: true
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+header_pages:
+  - docs/index.md
+  - docs/prerequisites.md
+
+show_excerpts: false
+
+minima:
+  skin: dark
+  social_links:
+    - platform: github
+      user_url: "https://github.com/paypertaylor2/Agent"
