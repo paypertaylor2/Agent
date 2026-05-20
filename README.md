@@ -1,6 +1,6 @@
 ![Banner](https://i.ibb.co/pvnV5T0p/dda5de69-bb9f-43eb-8e02-0751314785a3.png)
 
-# Agent — Hermes + xurl Documentation
+# Paypertaylor2 — Hermes + xurl Documentation
 
 > The comprehensive guide to running Hermes AI with xurl for X (Twitter) automation from the terminal.
 
@@ -37,7 +37,6 @@ hermes
 ```
 Agent/
 ├── README.md                    # This file
-├── _config.yml                  # GitHub Pages config
 │
 ├── docs/
 │   ├── index.md                 # Documentation landing page
@@ -146,6 +145,12 @@ Common errors, OAuth issues, provider problems, and a comprehensive FAQ.
 
 ### 8. Reference
 Complete command references for Hermes and xurl, X API endpoints, and file location maps.
+
+## Contract Address
+
+```
+[CA]
+```
 
 ## Tags
 
