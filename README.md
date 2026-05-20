@@ -1,13 +1,14 @@
-# Agent — Hermes + xurl
+![Banner](https://i.ibb.co/pvnV5T0p/dda5de69-bb9f-43eb-8e02-0751314785a3.png)
+
+# Agent — Hermes + xurl Documentation
 
 > The comprehensive guide to running Hermes AI with xurl for X (Twitter) automation from the terminal.
 
-[![GitHub Pages](https://img.shields.io/badge/Live%20Site-GitHub%20Pages-blue)](https://soon)
-[![License](https://img.shields.io/badge/license-MIT-green)](LICENSE)
+## Overview
 
-## What This Is
+This repository contains complete documentation for setting up and using [Hermes](https://github.com/NousResearch/hermes-agent) — an open-source AI agent from Nous Research — together with [xurl](https://github.com/xdevplatform/xurl), a CLI tool for the X API.
 
-A complete, structured documentation repo covering every aspect of setting up and using [Hermes](https://github.com/NousResearch/hermes-agent) (Nous Research's open-source terminal AI agent) with [xurl](https://github.com/xdevplatform/xurl) (the X API CLI).
+With these two tools connected, you can post, search, manage bookmarks, send DMs, automate engagement, and do anything else the X API supports — all through natural language in your terminal.
 
 ## Quick Start
 
@@ -31,33 +32,134 @@ hermes
 # Type /xurl to load the skill
 ```
 
-## Documentation Map
-
-| Section | Description |
-|---------|-------------|
-| [Prerequisites](docs/prerequisites.md) | System requirements, accounts, subscriptions |
-| [Installation](docs/installation/) | Hermes + xurl install for all platforms |
-| [Configuration](docs/configuration/) | Setup wizard, providers, models, messaging |
-| [Authentication](docs/authentication/) | xAI OAuth + X API OAuth 2.0 |
-| [xurl Skill](docs/xurl-skill/) | Full skill reference — post, read, interact, automate |
-| [Automation](docs/automation/) | Cron jobs, workflows, recipes |
-| [Troubleshooting](docs/troubleshooting/) | Common errors, OAuth issues, FAQ |
-| [Reference](docs/reference/) | Commands, flags, API endpoints, file paths |
-
-## Contract Address
+## Repository Structure
 
 ```
-[CA ]
+Agent/
+├── README.md                    # This file
+├── _config.yml                  # GitHub Pages config
+│
+├── docs/
+│   ├── index.md                 # Documentation landing page
+│   ├── prerequisites.md         # System requirements, accounts, subscriptions
+│   │
+│   ├── installation/
+│   │   ├── hermes.md            # Install Hermes (all platforms)
+│   │   ├── xurl.md              # Install xurl (all methods)
+│   │   └── verify.md            # Verify both are installed
+│   │
+│   ├── configuration/
+│   │   ├── hermes-setup.md      # Setup wizard walkthrough
+│   │   ├── providers.md         # All model providers
+│   │   ├── models.md            # Model selection guide
+│   │   ├── messaging.md         # Telegram/Discord gateway
+│   │   └── config-reference.md  # Full config.yaml / .env reference
+│   │
+│   ├── authentication/
+│   │   ├── xai-oauth.md         # xAI Grok OAuth flow
+│   │   ├── xurl-oauth.md        # X API OAuth 2.0 setup
+│   │   ├── xurl-app-setup.md    # Creating X developer app
+│   │   └── token-management.md  # Auth tokens, refresh, backup
+│   │
+│   ├── xurl-skill/
+│   │   ├── overview.md          # What the skill does
+│   │   ├── posting.md           # Post, reply, quote, media
+│   │   ├── reading.md           # Timeline, search, profiles, trends
+│   │   ├── interactions.md      # Like, repost, bookmark, follow
+│   │   ├── lists.md             # List management
+│   │   ├── dm.md                # Direct messages
+│   │   ├── media.md             # Images, video, GIFs
+│   │   └── advanced.md          # Chaining, batch ops, automation
+│   │
+│   ├── automation/
+│   │   ├── cron.md              # Scheduled tasks with Hermes
+│   │   ├── workflows.md         # Multi-step agent workflows
+│   │   └── examples.md          # Real-world automation recipes
+│   │
+│   ├── troubleshooting/
+│   │   ├── common-errors.md     # 401, command not found, etc.
+│   │   ├── oauth-issues.md      # OAuth flow failures
+│   │   ├── provider-issues.md   # Model provider problems
+│   │   └── faq.md               # Frequently asked questions
+│   │
+│   └── reference/
+│       ├── hermes-commands.md   # All /commands
+│       ├── xurl-commands.md     # All xurl CLI flags
+│       ├── api-endpoints.md     # X API surface reference
+│       └── file-locations.md    # ~/.hermes/ directory map
+│
+├── examples/
+│   ├── prompts/
+│   │   ├── posting.md           # Example prompts for posting
+│   │   ├── research.md          # Search & summarize workflows
+│   │   ├── engagement.md        # Like, reply, bookmark prompts
+│   │   └── monitoring.md        # Track topics, users, keywords
+│   │
+│   ├── scripts/
+│   │   ├── setup.sh             # One-shot setup script
+│   │   ├── backup-auth.sh       # Backup ~/.hermes/
+│   │   └── health-check.sh      # Verify everything works
+│   │
+│   └── configs/
+│       ├── config.yaml.example   # Annotated Hermes config
+│       └── .env.example          # Template env file
+│
+│
+└── .github/
+    ├── workflows/
+    │   └── pages.yml            # Auto-deploy to GitHub Pages
+    ├── ISSUE_TEMPLATE/
+    │   ├── bug-report.md
+    │   └── guide-request.md
+    └── CONTRIBUTING.md          # How to contribute
 ```
+
+## Documentation Sections
+
+### 1. Prerequisites
+System requirements, required accounts (SuperGrok, X developer), and optional providers.
+
+### 2. Installation
+Step-by-step guides for installing Hermes and xurl on macOS and Linux, plus verification steps.
+
+### 3. Configuration
+The Hermes setup wizard, model provider selection (12+ providers), model tiers, messaging gateway setup, and full config reference.
+
+### 4. Authentication
+xAI Grok OAuth flow, X API OAuth 2.0 setup, creating a developer app, and token management.
+
+### 5. xurl Skill
+The core of the documentation — 7 sections covering every xurl capability:
+- **Posting** — Create posts, replies, quotes, threads, media
+- **Reading** — Timeline, search, profiles, trends, bookmarks
+- **Interactions** — Like, repost, bookmark, follow, mute, block
+- **Lists** — Create and manage curated lists
+- **DMs** — Send and read direct messages
+- **Media** — Upload and post images, video, GIFs
+- **Advanced** — Chaining, batch operations, monitoring
+
+### 6. Automation
+Cron jobs, multi-step workflows, and 8 real-world automation recipes (daily digest, engagement bot, weekly analytics, etc.).
+
+### 7. Troubleshooting
+Common errors, OAuth issues, provider problems, and a comprehensive FAQ.
+
+### 8. Reference
+Complete command references for Hermes and xurl, X API endpoints, and file location maps.
 
 ## Tags
 
 `hermes` · `xurl` · `x-api` · `twitter-api` · `ai-agent` · `nous-research` · `grok` · `xai` · `automation` · `oauth2` · `terminal` · `cli`
 
+## Live Site
+
+This repo deploys to GitHub Pages at [paypertaylor2.github.io/Agent](https://paypertaylor2.github.io/Agent).
+
 ## Contributing
 
-See [CONTRIBUTING.md](.github/CONTRIBUTING.md). Issues and guide requests welcome.
+See [CONTRIBUTING.md](.github/CONTRIBUTING.md). Bug reports and guide requests are welcome.
 
 ## License
 
 MIT
+
