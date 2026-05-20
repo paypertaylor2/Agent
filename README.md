@@ -149,7 +149,7 @@ Complete command references for Hermes and xurl, X API endpoints, and file locat
 ## Contract Address
 
 ```
-[CA]
+4dMRdGJENrz6nKbHP2cT49YHb5Fk4gMtS86UjLGmpump
 ```
 
 ## Tags
