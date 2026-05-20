@@ -1,0 +1,65 @@
+# Hermes Configuration Example
+# Copy to ~/.hermes/config.yaml and customize
+
+# Model settings
+model:
+  # Provider: xai-grok-oauth, xai, openrouter, openai, anthropic, google, groq, mistral, cohere, together, fireworks, perplexity, sambanova
+  provider: xai-grok-oauth
+
+  # Model name (depends on provider)
+  name: grok-4.3
+
+  # Temperature (0.0 = deterministic, 1.0 = creative)
+  temperature: 0.7
+
+  # Max tokens per response
+  max_tokens: 4096
+
+# Agent behavior
+agent:
+  # Agent name
+  name: hermes
+
+  # System prompt (customize the agent's personality)
+  system_prompt: "You are a helpful assistant."
+
+  # Max conversation history to keep
+  max_history: 50
+
+  # Enable tools
+  tools_enabled: true
+
+# Gateway (messaging platforms)
+gateway:
+  telegram:
+    enabled: false
+    # Use ${VAR_NAME} to reference env vars
+    bot_token: "${TELEGRAM_BOT_TOKEN}"
+
+  discord:
+    enabled: false
+    bot_token: "${DISCORD_BOT_TOKEN}"
+
+# Tool configuration
+tools:
+  xurl:
+    enabled: true
+    # Default X app to use
+    default_app: my-app
+
+  web_search:
+    enabled: true
+
+  browser:
+    enabled: true
+
+  file_system:
+    enabled: true
+
+# Logging
+logging:
+  # Level: debug, info, warn, error
+  level: info
+
+  # Log file path
+  file: ~/.hermes/logs/hermes.log
